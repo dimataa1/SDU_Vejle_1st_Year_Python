@@ -134,3 +134,23 @@ Check:
 dir
 Make sure the file is saved and that you are working in the correct VS Code folder.
 """
+
+def calculate_average(score_1, score_2):
+    # Average of the two assignment scores
+    average = (score_1 + score_2) / 2
+    return average
+
+
+def show_student_report(name, score_1, score_2):
+    average = calculate_average(score_1, score_2)
+    print("Student:", name)
+    print("Assignment 1:", score_1)
+    print("Assignment 2:", score_2)
+    print("Average:", average)
+
+
+student_name = "Sara"
+assignment_1 = 75
+assignment_2 = 85
+
+show_student_report(student_name, assignment_1, assignment_2)
